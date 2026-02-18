@@ -11,7 +11,7 @@ Version: 1.0
 
 Authors / Maintainers: Richmond
 
-Repository: https://github.com/datamillers/Deploying-a-Scalable-ML-Pipeline-with-FastAPI.git
+Repository: https://github.com/datamillers/Deploying-a-Scalable-ML-Pipeline-with-FastAPI
 
 
 ## Intended Use

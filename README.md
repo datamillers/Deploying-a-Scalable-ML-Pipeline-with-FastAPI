@@ -1,3 +1,67 @@
+# Census Classification Model
+
+This project builds and deploys a machine learning model that predicts whether a person earns `<=50K` or `>50K` using census data.
+---
+## Repository
+https://github.com/datamillers/Deploying-a-Scalable-ML-Pipeline-with-FastAPI
+
+## Project Overview
+
+- Train a classification model on census data
+- Evaluate model performance and slice metrics
+- Write unit tests for the ML pipeline
+- Deploy the model using FastAPI
+- Test the API locally
+
+---
+
+## Training the Model
+
+Run the training script:
+
+python train_model.py
+
+This will:
+- Train the model
+- Save model artifacts
+- Generate slice performance metrics in `slice_output.txt`
+
+---
+
+## Unit Tests
+
+Run unit tests with:
+
+pytest
+
+All tests should pass.
+
+---
+
+## API Usage
+
+Start the API:
+
+uvicorn main:app --reload
+
+### Root Endpoint
+- GET /
+- Returns a simple greeting message
+
+### Inference Endpoint
+- POST /data/
+- Accepts census feature data
+- Returns a prediction (`<=50K` or `>50K`)
+
+The API can be tested using Swagger UI at `/docs`.
+
+---
+
+## Notes
+
+This project is for educational purposes only and is not intended for real-world deci
+
+
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
 # Environment Set up (pip or conda)
